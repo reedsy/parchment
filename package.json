@@ -1,16 +1,13 @@
 {
-  "name": "parchment",
-  "version": "2.0.0-dev.2",
+  "name": "@reedsy/parchment",
+  "version": "2.0.0-reedsy-1.0.0",
   "description": "A document model for rich text editors",
   "author": "Jason Chen <jhchen7@gmail.com>",
   "homepage": "http://quilljs.com/docs/parchment",
   "main": "dist/parchment.js",
   "files": [
-    "tsconfig.json",
-    "dist",
-    "src"
+    "dist"
   ],
-  "types": "dist/src/parchment.d.ts",
   "devDependencies": {
     "@babel/core": "^7.8.6",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
@@ -62,7 +59,7 @@
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
-    "url": "https://github.com/quilljs/parchment"
+    "url": "git://github.com/reedsy/parchment.git"
   },
   "scripts": {
     "build": "webpack --config webpack.conf.js",

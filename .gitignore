@@ -4,3 +4,5 @@
 
 *.log
 *.notes
+
+package-lock.json

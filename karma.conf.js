@@ -46,13 +46,17 @@ module.exports = function(config) {
       dir: '.build/coverage',
       reporters: [{ type: 'html' }, { type: 'text' }, { type: 'lcov' }],
     },
-    browsers: ['Chrome'],
+    browsers: ['ChromeHeadlessNoSandbox'],
     customLaunchers: {
       'saucelabs-chrome': {
         base: 'SauceLabs',
         browserName: 'Chrome',
         platform: 'OS X 10.15',
         version: 'beta',
+      },
+      ChromeHeadlessNoSandbox: {
+        base: 'ChromeHeadless',
+        flags: ['--no-sandbox'],
       },
     },
     sauceLabs: {
