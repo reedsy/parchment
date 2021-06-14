@@ -6,3 +6,4 @@
 *.notes
 
 package-lock.json
+!/dist
